@@ -2,13 +2,9 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.notNullValue;
-
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
@@ -91,5 +87,4 @@ public class testCreateOrder {
                 .and().statusCode(201);
 
     }
-
 }

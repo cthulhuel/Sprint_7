@@ -2,9 +2,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
@@ -93,5 +91,4 @@ public class testLoginCourier {
         response.then().assertThat().body("message", equalTo("Учетная запись не найдена"))
                 .and().statusCode(404);
     }
-
 }

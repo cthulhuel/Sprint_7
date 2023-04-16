@@ -12,12 +12,10 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <!-- версия Aspectj -->
         <aspectj.version>1.9.7</aspectj.version>
         <!-- версия Allure -->
         <allure.version>2.21.0</allure.version>
-
     </properties>
 
     <dependencies>
@@ -48,7 +46,6 @@
             <!--Тег scope указывает на область видимости зависимости: она видна только тестовым классам в директории src/test/java-->
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -99,5 +96,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
